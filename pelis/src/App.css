@@ -1,9 +1,14 @@
-.container{
+body{
+    background-color: #242424;
+  }
+  .container{
     display: flex;
     gap: 30px;
-}
-
-.card{
+    flex-wrap: wrap ;
+    padding: 20px 10px 20px 40px;
+  }
+  
+  .card {
     border: 2px solid black;
     border-radius: 5px;
     width: 180px;
@@ -13,38 +18,81 @@
     align-items: center;
     background-color: #5DFD19;
     font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-}
-
-.card img{
+    position: relative; /* Esto permite que los elementos hijos con posición absoluta se posicionen respecto a la tarjeta */
+  }
+  
+  .card:hover{
+    transform: scale(1.1); 
+    transition: 1s;
+  }
+  
+  .card img {
     width: 180px;
     height: 200px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 2px solid black;
-}
-
-.card h4{
+  }
+  
+  .card h4 {
     margin-top: 20px;
     margin-bottom: 2px;
     font-weight: 500;
-}
-.containerStatus{
+  }
+  
+  .containerStatus {
     background-color: #5DFD19;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -94px;
-    margin-bottom: 60px;
     width: 90px;
     height: 30px;
     border-radius: 10px;
     border: 2px solid black;
-}
-.containerStatus p{
+    position: absolute; 
+    top: 185px; 
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+  
+  .containerStatus p {
     font-weight: 500;
-}
-.parrafo{
+  }
+  
+  .parrafo {
     margin-top: 0;
     font-size: 13px;
-}
+  }
+  
+  .containerButton{
+    margin: 20px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .containerButton button{
+    padding: 10px;
+    border: none;
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    background-color: #5DFD19;
+    border-radius: 10px;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .containerButton button:hover{
+    transform: scale(1.1); 
+    transition: 0.3s;
+  }
+  
+  
+  .rick{
+    width: 35px;
+  }
