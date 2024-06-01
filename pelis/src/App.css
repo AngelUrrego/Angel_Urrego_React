@@ -24,6 +24,7 @@ body{
   .card:hover{
     transform: scale(1.1); 
     transition: 1s;
+    cursor: pointer;
   }
   
   .card img {
@@ -90,9 +91,15 @@ body{
   .containerButton button:hover{
     transform: scale(1.1); 
     transition: 0.3s;
+    cursor: pointer;
   }
   
   
   .rick{
     width: 35px;
+  }
+
+  .containerImg{
+    display: flex;
+    justify-content: center;
   }
