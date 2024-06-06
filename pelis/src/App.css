@@ -1,5 +1,6 @@
 body{
     background-color: #242424;
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   }
   .container{
     display: flex;
@@ -102,4 +103,42 @@ body{
   .containerImg{
     display: flex;
     justify-content: center;
+  }
+
+  .forms{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    text-decoration: none;
+  }
+
+  form input{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+
+  form select{
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+
+  form button{
+    padding: 6px 6px 6px 6px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #5DFD19;
+    color: #242424;
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-weight: 600;
   }
