@@ -1,12 +1,22 @@
 body{
     background-color: #242424;
     font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
-  .container{
+
+  .mainContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .containerCard{
     display: flex;
     gap: 30px;
     flex-wrap: wrap ;
-    padding: 20px 10px 20px 40px;
+    justify-content: center;
+    width: 90%;
   }
   
   .card {
@@ -77,6 +87,7 @@ body{
   
   .containerButton button{
     padding: 10px;
+    height: 50px;
     border: none;
     font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     background-color: #5DFD19;
@@ -87,6 +98,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 5px;
+  }
+
+  .buttons{
+    width: 45px;
   }
   
   .containerButton button:hover{
@@ -99,24 +114,23 @@ body{
   .rick{
     width: 35px;
   }
-
-  .containerImg{
-    display: flex;
-    justify-content: center;
-  }
-
   .forms{
-    display: flex;
-    justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px;
     border: none;
     text-decoration: none;
+    flex-wrap: wrap;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   form input{
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 5px;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
     border: none;
@@ -126,6 +140,7 @@ body{
   form select{
     margin-right: 10px;
     padding: 10px 10px 10px 10px;
+    margin-top: 5px;
     border-radius: 10px;
     border: none;
     outline: none;
